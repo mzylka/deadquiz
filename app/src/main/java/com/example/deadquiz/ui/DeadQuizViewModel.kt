@@ -1,6 +1,5 @@
 package com.example.deadquiz.ui
 
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -9,11 +8,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.deadquiz.DeadlockApi
 import com.example.deadquiz.data.DeadlockItem
+import com.example.deadquiz.data.Question
 import com.example.deadquiz.data.db.Item
 import com.example.deadquiz.data.db.ItemsRepository
-import com.example.deadquiz.data.Question
 import com.example.deadquiz.data.db.Score
-import com.example.deadquiz.data.db.ScoreDAO
 import com.example.deadquiz.data.db.ScoreRepository
 import com.example.deadquiz.data.toItem
 import kotlinx.coroutines.async
